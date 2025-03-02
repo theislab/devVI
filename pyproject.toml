@@ -9,7 +9,7 @@ description = "Integration of developmental scRNA-seq data"
 readme = "README.md"
 license = { file = "LICENSE" }
 maintainers = [
-  { name = "Leander Dony", email = "leander.dony@helmholtz-munich.de" },
+  { name = "Leander Dony", email = "xx" },
 ]
 authors = [
   { name = "Leander Dony" },
