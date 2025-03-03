@@ -9,7 +9,7 @@ description = "Integration of developmental scRNA-seq data"
 readme = "README.md"
 license = { file = "LICENSE" }
 maintainers = [
-  { name = "Leander Dony", email = "xx" },
+  { name = "Leander Dony", email = "s9c3xr70@anonaddy.me" },
 ]
 authors = [
   { name = "Leander Dony" },
