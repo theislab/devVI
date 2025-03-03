@@ -1,0 +1,31 @@
+{
+    "template": "https://github.com/scverse/cookiecutter-scverse",
+    "commit": "cc35433d24b6b1e480683b1dff5edafe9b6fe69d",
+    "checkout": null,
+    "context": {
+        "cookiecutter": {
+            "project_name": "devVI",
+            "package_name": "devvi",
+            "project_description": "Integration of developmental scRNA-seq data",
+            "author_full_name": "Leander Dony",
+            "author_email": "leander.dony@helmholtz-munich.de",
+            "github_user": "le-ander",
+            "github_repo": "devVI",
+            "license": "MIT License",
+            "ide_integration": true,
+            "_copy_without_render": [
+                ".github/workflows/build.yaml",
+                ".github/workflows/test.yaml",
+                "docs/_templates/autosummary/**.rst"
+            ],
+            "_render_devdocs": false,
+            "_jinja2_env_vars": {
+                "lstrip_blocks": true,
+                "trim_blocks": true
+            },
+            "_template": "https://github.com/scverse/cookiecutter-scverse",
+            "_commit": "cc35433d24b6b1e480683b1dff5edafe9b6fe69d"
+        }
+    },
+    "directory": null
+}
