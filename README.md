@@ -2,8 +2,9 @@
 
 [![Tests][badge-tests]][tests]
 [![Documentation][badge-docs]][documentation]
+[![codecov](https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK)](https://codecov.io/gh/theislab/devVI)
 
-[badge-tests]: https://img.shields.io/github/actions/workflow/status/le-ander/devVI/test.yaml?branch=main
+[badge-tests]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/test.yaml?branch=main
 [badge-docs]: https://img.shields.io/readthedocs/devVI
 
 Integration of developmental scRNA-seq data
@@ -31,7 +32,7 @@ pip install devVI
 1. Install the latest development version:
 
 ```bash
-pip install git+https://github.com/le-ander/devVI.git@main
+pip install git+https://github.com/theislab/devVI.git@main
 ```
 
 ## Release notes
@@ -49,8 +50,8 @@ If you found a bug, please use the [issue tracker][].
 
 [mambaforge]: https://github.com/conda-forge/miniforge#mambaforge
 [scverse discourse]: https://discourse.scverse.org/
-[issue tracker]: https://github.com/le-ander/devVI/issues
-[tests]: https://github.com/le-ander/devVI/actions/workflows/test.yml
+[issue tracker]: https://github.com/theislab/devVI/issues
+[tests]: https://github.com/theislab/devVI/actions/workflows/test.yml
 [documentation]: https://devVI.readthedocs.io
 [changelog]: https://devVI.readthedocs.io/en/latest/changelog.html
 [api documentation]: https://devVI.readthedocs.io/en/latest/api.html
