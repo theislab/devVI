@@ -53,8 +53,8 @@ optional-dependencies.test = [
 ]
 # https://docs.pypi.org/project_metadata/#project-urls
 urls.Documentation = "https://devVI.readthedocs.io/"
-urls.Homepage = "https://github.com/le-ander/devVI"
-urls.Source = "https://github.com/le-ander/devVI"
+urls.Homepage = "https://github.com/theislab/devVI"
+urls.Source = "https://github.com/theislab/devVI"
 
 [tool.hatch.envs.default]
 installer = "uv"
