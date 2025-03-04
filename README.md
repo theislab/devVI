@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK)](https://codecov.io/gh/theislab/devVI)
 
 [badge-tests]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/test.yaml?branch=main
-[badge-docs]: https://img.shields.io/readthedocs/devVI
+[badge-docs]: https://img.shields.io/readthedocs/devvi
 
 Integration of developmental scRNA-seq data
 
