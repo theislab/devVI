@@ -2,10 +2,11 @@
 
 [![Tests][badge-tests]][tests]
 [![Documentation][badge-docs]][documentation]
-[![codecov](https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK)](https://codecov.io/gh/theislab/devVI)
+[![Codecov][badge-codecov]][codecov]
 
 [badge-tests]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/test.yaml?branch=main
-[badge-docs]: https://img.shields.io/readthedocs/devvi
+[badge-docs]: https://img.shields.io/readthedocs/devvi/latest.svg?label=Read%20the%20Docs
+[badge-codecov]: https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK
 
 Integration of developmental scRNA-seq data
 
@@ -56,3 +57,4 @@ If you found a bug, please use the [issue tracker][].
 [changelog]: https://devVI.readthedocs.io/en/latest/changelog.html
 [api documentation]: https://devVI.readthedocs.io/en/latest/api.html
 [pypi]: https://pypi.org/project/devVI
+[codecov]: https://codecov.io/gh/theislab/devVI
