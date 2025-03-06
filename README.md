@@ -20,7 +20,7 @@ in particular, the [API documentation][].
 ## Installation
 
 You need to have Python 3.10 or newer installed on your system.
-If you don't have Python installed, we recommend installing [Mambaforge][].
+If you don't have Python installed, we recommend installing [uv][].
 
 There are several alternative options to install devVI:
 
@@ -51,8 +51,7 @@ If you found a bug, please use the [issue tracker][].
 
 > t.b.a
 
-[mambaforge]: https://github.com/conda-forge/miniforge#mambaforge
-[scverse discourse]: https://discourse.scverse.org/
+[uv]: https://github.com/astral-sh/uv
 [issue tracker]: https://github.com/theislab/devVI/issues
 [tests]: https://github.com/theislab/devVI/actions/workflows/test.yml
 [documentation]: https://devVI.readthedocs.io
