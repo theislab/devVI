@@ -53,7 +53,8 @@ If you found a bug, please use the [issue tracker][].
 
 [uv]: https://github.com/astral-sh/uv
 [issue tracker]: https://github.com/theislab/devVI/issues
-[tests]: https://github.com/theislab/devVI/actions/workflows/test.yml
+[tests]: https://github.com/theislab/devVI/actions/workflows/test.yaml
+[build]: https://github.com/theislab/devVI/actions/workflows/build.yaml
 [documentation]: https://devVI.readthedocs.io
 [changelog]: https://devVI.readthedocs.io/en/latest/changelog.html
 [api documentation]: https://devVI.readthedocs.io/en/latest/api.html
