@@ -1,10 +1,12 @@
 # devVI
 
+[![Build][badge-build]][build]
 [![Tests][badge-tests]][tests]
 [![Documentation][badge-docs]][documentation]
 [![Codecov][badge-codecov]][codecov]
 
-[badge-tests]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/test.yaml?branch=main
+[badge-build]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/build.yaml?branch=main&style=flat&logo=github&label=Build%20checks
+[badge-tests]: https://img.shields.io/github/actions/workflow/status/theislab/devVI/test.yaml?branch=main&style=flat&logo=github&label=Tests
 [badge-docs]: https://img.shields.io/readthedocs/devvi/latest.svg?label=Read%20the%20Docs
 [badge-codecov]: https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK
 
