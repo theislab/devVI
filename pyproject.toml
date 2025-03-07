@@ -23,9 +23,10 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-  "anndata",
+  "lightning",
   # for debug logging (referenced from the issue template)
   "session-info",
+  "torch",
 ]
 optional-dependencies.dev = [
   "pre-commit",

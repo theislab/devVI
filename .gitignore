@@ -21,3 +21,6 @@ __pycache__/
 
 # VSCode
 .vscode/
+
+# Pyenv
+.python-version
