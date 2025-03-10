@@ -23,7 +23,7 @@ def basic_plot(adata: nn.Module) -> int:
 
 
 class Encoder(nn.Module):
-    """A basic class.
+    """The encoder module.
 
     Parameters
     ----------
@@ -51,7 +51,7 @@ class Encoder(nn.Module):
 
 
 class Decoder(nn.Module):
-    """A basic class.
+    """The decoder module.
 
     Parameters
     ----------
