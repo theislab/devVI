@@ -36,7 +36,7 @@ class Encoder(nn.Module):
         self.l1 = nn.Sequential(nn.Linear(28 * 28, 64), nn.ReLU(), nn.Linear(64, 3))
 
     def forward(self, x):
-        """Generate a basic plot for an AnnData object.
+        """Forward pass.
 
         Parameters
         ----------
@@ -64,7 +64,7 @@ class Decoder(nn.Module):
         self.l1 = nn.Sequential(nn.Linear(3, 64), nn.ReLU(), nn.Linear(64, 28 * 28))
 
     def forward(self, x):
-        """Generate a basic plot for an AnnData object.
+        """Forward pass.
 
         Parameters
         ----------
