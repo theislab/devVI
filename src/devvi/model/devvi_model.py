@@ -1,8 +1,8 @@
 # import lightning as L
-# import torch
+import torch
+
 # import torch.nn.functional as F
 # from torch.utils.data import DataLoader
-
 from torch import nn
 
 
@@ -61,7 +61,7 @@ class Decoder(nn.Module):
 
     def __init__(self):
         super().__init__()
-        self.l1 = nn.Sequential(nn.Linear(3, 64), nn.ReLU(), nn.Linear(64, 28 * 28))
+        self.tensor = torch.Tensor([1, 2, 3])
 
     def forward(self, x):
         """Forward pass.
@@ -75,7 +75,7 @@ class Decoder(nn.Module):
         -------
         Some integer value.
         """
-        return self.l1(x)
+        return x
 
 
 class BasicClass:
