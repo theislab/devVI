@@ -38,9 +38,11 @@ pip install devVI
 pip install git+https://github.com/theislab/devVI.git@main
 ```
 
+<!--
 ## Release notes
 
 See the [changelog][].
+-->
 
 ## Contact
 
