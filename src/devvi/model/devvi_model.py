@@ -120,5 +120,5 @@ class BasicClass:
         -------
         Some integer value.
         """
-        print("Implement a method here.")
-        return ""
+        pass
+        return "Test"
