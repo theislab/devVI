@@ -75,7 +75,7 @@ class Decoder(nn.Module):
         -------
         Some integer value.
         """
-        return x
+        return x + 5
 
 
 class BasicClass:
