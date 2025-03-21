@@ -18,8 +18,8 @@ def basic_plot(adata: nn.Module) -> int:
     -------
     Some integer value.
     """
-    print("Import matplotlib and implement a plotting function here.")
-    return 0
+    x = torch.Tensor([1, 2, 3])
+    return x
 
 
 class Encoder(nn.Module):
