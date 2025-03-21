@@ -6,7 +6,7 @@ import torch
 from torch import nn
 
 
-def basic_plot(adata: nn.Module) -> int:
+def basic_plot(adata: nn.Module) -> torch.Tensor:
     """Generate a basic plot for an AnnData object.
 
     Parameters
