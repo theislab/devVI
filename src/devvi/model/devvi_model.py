@@ -19,7 +19,7 @@ def basic_plot(adata: nn.Module) -> torch.Tensor:
     Some integer value.
     """
     x = torch.Tensor([1, 2, 3])
-    return x
+    return x + 1
 
 
 class Encoder(nn.Module):
