@@ -47,7 +47,7 @@ class Encoder(nn.Module):
         -------
         Some integer value.
         """
-        return self.l1(x)
+        return self.l1(x + 1)
 
 
 class Decoder(nn.Module):

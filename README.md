@@ -10,7 +10,7 @@
 [badge-docs]: https://img.shields.io/readthedocs/devvi/latest.svg?label=Read%20the%20Docs
 [badge-codecov]: https://codecov.io/gh/theislab/devVI/graph/badge.svg?token=fDsBzRodRK
 
-Integration of developmental scRNA-seq data
+Integration of developmental scRNA-seq data. Inspried by scPoli.
 
 ## Getting started
 
