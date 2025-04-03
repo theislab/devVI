@@ -3,7 +3,7 @@ build-backend = "hatchling.build"
 requires = [ "hatchling" ]
 
 [project]
-name = "devVI"
+name = "devvi"
 version = "0.0.1"
 description = "Integration of developmental scRNA-seq data"
 readme = "README.md"
