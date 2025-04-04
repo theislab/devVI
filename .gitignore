@@ -19,8 +19,5 @@ __pycache__/
 /docs/generated/
 /docs/_build/
 
-# VSCode
-.vscode/
-
 # Python version
 .python-version
