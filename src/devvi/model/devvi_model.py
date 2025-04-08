@@ -32,27 +32,35 @@ class Encoder(nn.Module):
             hidden_dims = [512, 256, 128]
         super().__init__()
 
-        # Input layer
-        layers = [
-            nn.Linear(input_dim, hidden_dims[0]),
-            nn.BatchNorm1d(hidden_dims[0]),
-            nn.LeakyReLU(0.2),
-            nn.Dropout(dropout),
-        ]
+        layers = []
 
-        # Hidden layers
-        for i in range(len(hidden_dims) - 1):
+        if not hidden_dims:
+            # If no hidden dimensions, create direct connection
+            layers.append(nn.Linear(input_dim, latent_dim))
+        else:
+            # Input layer
             layers.extend(
                 [
-                    nn.Linear(hidden_dims[i], hidden_dims[i + 1]),
-                    nn.BatchNorm1d(hidden_dims[i + 1]),
+                    nn.Linear(input_dim, hidden_dims[0]),
+                    nn.BatchNorm1d(hidden_dims[0]),
                     nn.LeakyReLU(0.2),
                     nn.Dropout(dropout),
                 ]
             )
 
-        # Output layer
-        layers.append(nn.Linear(hidden_dims[-1], latent_dim))
+            # Hidden layers
+            for i in range(len(hidden_dims) - 1):
+                layers.extend(
+                    [
+                        nn.Linear(hidden_dims[i], hidden_dims[i + 1]),
+                        nn.BatchNorm1d(hidden_dims[i + 1]),
+                        nn.LeakyReLU(0.2),
+                        nn.Dropout(dropout),
+                    ]
+                )
+
+            # Output layer
+            layers.append(nn.Linear(hidden_dims[-1], latent_dim))
 
         self.model = nn.Sequential(*layers)
 
@@ -116,27 +124,35 @@ class Decoder(nn.Module):
         if hidden_dims is None:
             hidden_dims = [128, 256, 512]
 
-        # Input layer
-        layers = [
-            nn.Linear(latent_dim, hidden_dims[0]),
-            nn.BatchNorm1d(hidden_dims[0]),
-            nn.LeakyReLU(0.2),
-            nn.Dropout(dropout),
-        ]
+        layers = []
 
-        # Hidden layers
-        for i in range(len(hidden_dims) - 1):
+        if not hidden_dims:
+            # If no hidden dimensions, create direct connection with sigmoid
+            layers.extend([nn.Linear(latent_dim, output_dim), nn.Sigmoid()])
+        else:
+            # Input layer
             layers.extend(
                 [
-                    nn.Linear(hidden_dims[i], hidden_dims[i + 1]),
-                    nn.BatchNorm1d(hidden_dims[i + 1]),
+                    nn.Linear(latent_dim, hidden_dims[0]),
+                    nn.BatchNorm1d(hidden_dims[0]),
                     nn.LeakyReLU(0.2),
                     nn.Dropout(dropout),
                 ]
             )
 
-        # Output layer
-        layers.extend([nn.Linear(hidden_dims[-1], output_dim), nn.Sigmoid()])
+            # Hidden layers
+            for i in range(len(hidden_dims) - 1):
+                layers.extend(
+                    [
+                        nn.Linear(hidden_dims[i], hidden_dims[i + 1]),
+                        nn.BatchNorm1d(hidden_dims[i + 1]),
+                        nn.LeakyReLU(0.2),
+                        nn.Dropout(dropout),
+                    ]
+                )
+
+            # Output layer
+            layers.extend([nn.Linear(hidden_dims[-1], output_dim), nn.Sigmoid()])
 
         self.model = nn.Sequential(*layers)
 
@@ -318,7 +334,7 @@ class AutoEncoder(L.LightningModule):
         optimizer = torch.optim.AdamW(self.parameters(), lr=self.learning_rate, weight_decay=self.weight_decay)
 
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-            optimizer, mode="min", factor=self.scheduler_factor, patience=self.scheduler_patience, verbose="true"
+            optimizer, mode="min", factor=self.scheduler_factor, patience=self.scheduler_patience
         )
 
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "monitor": "val_loss"}}
